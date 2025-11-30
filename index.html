@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>Alexa's Portfolio, Projects, and Passions<h1></h1>
+        <h1>Alexa's Portfolio, Projects, and Passions</h1>
     </header>
     <nav>
             <ul>
@@ -22,46 +22,108 @@
             </ul>
     </nav>
 
-        <h1>Welcome</h1>
-        <p>
-            Welcome to my first official personal website page! My name is Alexa Hernandez and I am a Senior at Arizona State University in Informatics who has had a focus in Data Sciences as well as Digital Cultues.
-        </p>
+        <h1>Welcome</h1> <!-- [centered] -->
+        <h4> <!-- [centered] -->
+            Welcome to my first official personal website page!
+        </h4>
 
-    <section>
-        <h2>About Me</h2> <!-- [LEFT] -->
-        <img src="images/20230815_224204.jpg" alt="selfport_RIGHT" height="" width="300" />
-        <p>
-            I am an individual who is very invested in the art, science, music, literature, and much more. I have been interested in technology especially since I was a young child, which is why I have pursued a degree in Informatics.
-        </p>
-
+    <section class="content-row reverse"> <!-- About Me: img LEFT, text RIGHT -->
+        <div class="text">
+            <h2>About Me</h2>
+            <p>
+                My name is Alexa Hernandez and I am a Senior at Arizona State University in Informatics, who has had a focus in Data Sciences
+                as well as Digital Cultues. I am a graduate of Heritage Academy Mesa, where I attained two assiciates degrees while completing
+                my high school career. I am an individual who is very invested in the art, science, music, literature, and much more. I have been
+                 interested in technology especially since I was a young child, which is why I have pursued a degree in Informatics.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/20250201_173102.jpg" alt="self portrait" />
+        </div>
     </section>
 
-    <section>
-        <h2>Experiences</h2>
-        <img src="images/Hernandez.Experimentation.jpg" alt="tech_LEFT" height="" width="250" />
-        <p>
-            *paragraph*
-        </p>
+    <section class="content-row"> <!-- Experiences: text LEFT, img RIGHT -->
+        <div class="text">
+            <h2>Experiences</h2>
+            <p>
+                As a student in Informatics, I have taken many classes that I feel contribute to my growth as a professional in the field.
+                Some of these classes included Applied Data Structures and Algorithms, Clinical Informatics, Advanced Object-Oriented Principles,
+                Evaluation of Informatics Systems, Introduction to Human Computer Interaction, Web-Based Information Management Systems,
+                Machine Learning for Data Science, and more. These classes have given me great insight into the various aspects of Informatics.
+                In addition to these practiced classes, I have also had the oppportunity to work as a teaching assistant for an Object-Oriented
+                Programming and Data Structures course, and am currently working personally with a company designing detail streaming buttons
+                in their search engine results.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/Hernandez.Experimentation.jpg" alt="experimentation" />
+        </div>
     </section>
 
-    <section>
-        <h2>Skills</h2> <!-- [LEFT] -->
-        <img src="images/20230228_133143.jpg" alt="photography_RIGHT" height="" width="250" />
-        <p>
-            *paragraph*
-        </p>
+    <section class="content-row reverse"> <!-- Skills: img LEFT, text RIGHT -->
+        <div class="text">
+            <h2>Skills</h2>
+            <p>
+                In addition to my skills as a programmer and data scientist, I also have applications of skills in various other areas.
+                For the more technical skills, I know Microsoft applications very well, have practiced in team leading, public speaking,
+                professional writing, student teaching, full stack development, and many programming langues. Additionally, I am highly
+                competent in photography, digital art, traditional art, music production, creative writing, and more.
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/20230228_133143.jpg" alt="photography" />
+        </div>
     </section>
 
-    <section>
-        <h2>Interests</h2>
-        <img src="images/IMG_20230124_203904_475.jpg" alt="art_LEFT" height="" width="250" />
-        <p>
-            *paragraph*
-        </p>
+    <section class="content-row"> <!-- Interests: text LEFT, img RIGHT -->
+        <div class="text">
+            <h2>Interests</h2>
+            <p>
+                Tying into my more creative skills, I have a wide variety of interests that I pursue in my free time.
+                Some of these interests include (as mentioned before) photography, digital art, traditional art, music
+                production but also reading, creative writing, playing the guitar and piano, and gaming. I also love to study
+                biotechnology, psychology, human-computer Interaction, artificial intelligence, history, literature, and other topics.
+
+            </p>
+        </div>
+        <div class="image">
+            <img src="images/IMG_20230124_203904_475.jpg" alt="art" />
+        </div>
     </section>
 
-    <!-- form specifications go here -->
+    <!-- form: -->
+    <form action="/submit_form" method="post">
+        <h2>Information Requests and Feedback</h2>
+        <div>
+            <label for="Name">Please enter your name:</label>
+            <input type="text" id="Name" name="Name" required>
+        </div>
 
+        <div>
+            <label for="Email"><br>Please enter your email:</label>
+            <input type="email" id="Email" name="Email" required>
+        </div>
+
+        <div>
+            <label for="MessageType"><br>Type of message:</label>
+            <select id="MessageType" name="MessageType" required>
+                <option value="InfoRequest">Information Request</option>
+                <option value="Feedback">Feedback</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Message"><br>Please enter your message:<br></label>
+            <textarea id="Message" name="Message" rows="3" cols="50" required></textarea>
+            <!-- <input type="text" name="Message" rows="4" cols="50" required></textarea> -->
+        </div>
+
+        <div>
+            <br>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 
 
     <div id="contact">
