@@ -123,7 +123,7 @@
 
         <div>
             <br>
-            <button type="submit">Submit</button>
+            <button type="submit">Submit</button> <!--onclick="window.location.href='formsub.html'"-->
             <br><br>
         </div>
 
@@ -143,7 +143,13 @@
 			.then(response => response.json())
 			.then(response => console.log('Success!', response))
 			.catch(error => console.error('Error!', error.message))
-	})
+            // Reset all form fields
+            // event.preventDefault();
+            // console.log("Form submitted!");
+            form.reset();
+            window.location.href = "formsub.html";
+	}
+    )
 </script>
 
     <div id="contact">
