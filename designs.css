@@ -123,10 +123,10 @@ section {
 /* heading and paragraph styling inside content rows */
 .content-row h2 {
     margin-top: 0;
-    color: #00061a; /* section headings set to dark text color */
+    color: #ffffff; /*00061a*/ /* section headings set to dark text color */
 }
 
-.content-row p { color: #00061a; line-height:1.6; }
+.content-row p { color: #ffffff; line-height:1.6; } /*00061a*/
 
 /* Small screens: stack image above/below text and make full-width */
 @media (max-width: 760px) {
@@ -191,7 +191,7 @@ iframe[src$=".pdf"]{
 /* color of links in table */
 .contact-table a,
 .contact-table a:visited {
-    color: #00061a;
+    color: #00061a; /*00061a*/
     text-decoration: none;
 }
 .contact-table a:hover,
@@ -229,11 +229,11 @@ iframe[src$=".pdf"]{
 
 #video-section h2 {
     margin-top: 0;
-    color: #00061a;
+    color: #ffffff; /*00061a*/
 }
 
 #video-section p {
-    color: #00061a;
+    color: #ffffff; /*00061a*/
     line-height: 1.6;
 }
 
