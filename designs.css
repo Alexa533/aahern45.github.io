@@ -358,6 +358,10 @@ iframe[src$=".pdf"]{
     flex:1;
 }
 
+.placeholder-text a{
+    color: #b8fbff;
+}
+
 @media (max-width:760px){
     .github-box{ flex-direction:column; gap:8px; }
     .github-box input[type="url"]{ width:100%; }
