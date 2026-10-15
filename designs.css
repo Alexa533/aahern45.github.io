@@ -345,13 +345,13 @@ iframe[src$=".pdf"]{
     margin-top:12px;
 }
 .project-placeholder .placeholder-image{
-    width:260px;
-    height:160px;
-    background: linear-gradient(135deg, #e6e6e6, #cfcfcf);
+    width:max-content; /*260px*/
+    height:200px;
+    /* background: linear-gradient(135deg, #e6e6e6, #cfcfcf); */
     display:flex;
-    align-items:center;
+    /* align-items:center; */
     justify-content:center;
-    color:#333;
+    /* color:#333; */
     border-radius:6px;
 }
 .project-placeholder .placeholder-text{
